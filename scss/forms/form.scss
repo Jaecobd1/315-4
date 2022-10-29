@@ -1,0 +1,12 @@
+form {
+    display: flex;
+    flex-direction: column;
+    label {
+        font-size: 24px;
+    }
+    input {
+        height: 100px;
+        width: 80vw;
+        font-size: 50px;
+    }
+}

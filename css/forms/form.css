@@ -1,0 +1,14 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  font-size: 24px;
+}
+form input {
+  height: 100px;
+  width: 80vw;
+  font-size: 50px;
+}
+
+/*# sourceMappingURL=form.css.map */

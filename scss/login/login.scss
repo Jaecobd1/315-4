@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    align-items: center;
+    .login {
+        height: 1000px;
+        background-color: grey;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        form {
+            align-items: center;
+            input {
+                width: 30vw;
+            }
+        }
+    }
+    .create {
+        width: 50vw;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        background-color: darkgrey;
+        justify-content: center;
+        form {
+            align-items: center;
+            input {
+                width: 30vw;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .container {
+        flex-direction: column;
+    }
+}

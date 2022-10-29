@@ -1,0 +1,25 @@
+.hero {
+    position: relative;
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/Hall.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        background-color: rgba(13, 139, 122, 0.7);
+        h1 {
+            margin-left: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #fff;
+            font-size: 40px;
+        }
+    }
+}
