@@ -39,9 +39,10 @@ function initListeners() {
         let city = $("#city").val();
         let state = $("#state").val();
         let zip = $("#zip").val();
-        let email = $("#email").value;
+        let email = $("#email").val();
         let phone = $("#phone").val();
-        let time = $("#time").val();
+        let time = $("#time").value;
+        alert("name: " + firstName + " " + lastName + "\n Address:" + address + "\n" + city + ", " + zip + '\n contact:' + email + " " + phone + "\n time created:" + time);
         console.log("name: " + firstName + " " + lastName + "\n Address:" + address + "\n" + city + ", " + zip + '\n contact:' + email + " " + phone + "\n time created:" + time);
     })
     $("#createAccount").click(function(e) {
@@ -51,12 +52,14 @@ function initListeners() {
         let email = $("#email").val();
         let createPassword = $("#createPassword").val();
         console.log("Name:" + firstName + " " + lastName + "\n Email:" + email + " \n Password:" + createPassword);
+        alert("Name:" + firstName + " " + lastName + "\n Email:" + email + " \n Password:" + createPassword);
     })
     $("#login").click(function(e) {
         e.preventDefault();
         let username = $("#username").val();
         let password = $("#password").val();
-        console.log(username + "\n " + password)
+        console.log(username + "\n " + password);
+        alert(username + "\n " + password);
     })
     $("#edit").click(function(e) {
         e.preventDefault();
@@ -74,6 +77,16 @@ function initListeners() {
         $("#password").val(user.password);
 
         console.log(user);
+    })
+    $("#editSubmit").click(function(e) {
+        e.preventDefault();
+        let fName = $("#fName").val();
+        let lName = $("#lName").val();
+        let username = $("#username").val();
+        let password = $("#password").val();
+        alert("Name: " + fName + " " + lName + "\nusername: " + username + "\nPassword: " + password);
+        console.log("Name: " + fName + " " + lName + "\nusername: " + username + "\nPassword: " + password);
+
     })
 }
 
